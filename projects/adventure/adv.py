@@ -286,7 +286,7 @@ player.current_room = world.starting_room
 visited_rooms.add(player.current_room)
 
 for move in traversal_path:
-    visited_rooms.add(world.rooms[move
+    visited_rooms.add(world.rooms[move])
 
     # player.travel(move)
     # visited_rooms.add(player.current_room)
