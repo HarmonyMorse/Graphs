@@ -19,12 +19,12 @@ class Room:
         exits = []
         if self.n_to is not None:
             exits.append("n")
+        if self.e_to is not None:
+            exits.append("e")
         if self.s_to is not None:
             exits.append("s")
         if self.w_to is not None:
             exits.append("w")
-        if self.e_to is not None:
-            exits.append("e")
         return exits
     def get_exits_string(self):
         return f"Exits: [{', '.join(self.get_exits())}]"
